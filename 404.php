@@ -1,0 +1,1 @@
+<body><img src='assets/img/404.png' alt='' style='height:100%; width:100% margin:100'></body>

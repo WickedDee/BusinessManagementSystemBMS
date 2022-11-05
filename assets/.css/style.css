@@ -1,0 +1,188 @@
+:root{
+    --gray: #313631;
+    --vsu-green: #54642d;
+    --almost-white:#e4e4e4;
+    --pale-green:#859a41;
+    --purple-gray: #a7a6ba;
+}
+/* ALERTS */
+#toast-container > .toast-success {
+    background-color: #51A351; 
+}
+#toast-container > .toast-error {
+    background-color:  #f93154;
+}
+#toast-container{
+    font-family:'Roboto', sans-serif;
+    font-size: 15px;
+    margin-top: 30px;
+}
+/* ALERTS */
+/* TOPBAR */
+/* The button used to open the sidebar */
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    /* background-color: #111; */
+    color: white;
+    transition: 0.5s;
+    /* padding: 10px 15px; */
+    border: none;
+}
+.openbtn:hover {
+    background-color: #444;
+}
+#topbar{
+    height:48px;
+    background-color: var(--vsu-green);
+}
+
+#topbar .row h5{
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+}
+#topbar i{
+    font-size: 28px;
+    color: white;
+}
+/* TOPBAR */
+/* SIDEBAR */
+.sidebar {
+    height: 100%;
+    width: 270px;
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--almost-white);
+    box-shadow:  2px 0px 1em #959795;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidebar ul{
+    list-style-type: none;
+    margin-left: 15px; 
+}
+.sidebar ul li{
+    font-weight: 500;
+    font-size: 16px;
+}
+.sidebar .nav-link {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    display: block;
+    transition: 0.3s;
+    font-weight: 500;
+    font-size: 16px;
+}
+.sidebar .has-submenu .submenu li{
+    margin-left: 30px;
+}
+.sidebar a i{
+    padding-left: 10px;
+    padding-right: 25px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.sidebar .navbar-nav .nav-link:hover{
+    color:white;
+    background-color: var(--pale-green);
+    width: 240px;
+    border-radius: 3px;
+}
+.sidebar .navbar-nav .nav-item:current{
+    background-color: var(--pale-green);
+    color: #ffffff;
+}
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.sidebar .closebtn:hover{
+    color: #f93154;
+}
+/* SIDEBAR */
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    background-color: #f5f7fa;
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 0;
+    margin: 0;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+/* DASHBOARD */
+#dashboard .card .card-body .count-numbers{
+    font-family:'Roboto', sans-serif;
+    font-size: 22px;
+    color: rgb(66, 66, 66);
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+#dashboard .card .card-body .count-name{
+    font-family:'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+/* DASHBOARD */
+/* TABLE CONTENT */
+.table thead{
+    background-color: rgb(212, 210, 224);
+    color: var(--gray);
+    font-size: 14px;
+}
+.table tbody{
+    font-size: 12px;
+}
+.table tbody td{
+    width: fit-content;
+}
+#datatableid_wrapper .row {
+    padding-bottom: 12px;
+}
+#badge{
+    font-size:12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
+    letter-spacing: 1;
+    color: rgb(58, 58, 58);
+}
+/* TABLE CONTENT */
+/* MODAL */
+.modal .modal-dialog .modal-content .modal-header{
+    background-color:var(--pale-green);
+}
+.modal .modal-dialog .modal-content .modal-header .modal-title{
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 500;
+    font-size:18px; 
+    color: rgb(255, 255, 255); 
+    letter-spacing:2px;
+    text-transform: uppercase;
+}
+.modal .modal-dialog .modal-content .modal-body{
+    font-size:15px
+}
+.modal .modal-dialog .modal-content .modal-body span{
+    font-family:'Roboto', sans-serif;
+    color:var(--gray);
+    font-size: 14px
+}
+.modal .modal-dialog .modal-content .modal-body .form-control{
+    font-size:15px;
+    
+}/* MODAL */
